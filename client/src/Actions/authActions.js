@@ -49,7 +49,7 @@ export const loadUser = () => (dispatch, getState) => {
     dispatch({ type: authCotants.userLoadding });
 
 
-    axios.get('https://safe-reaches-90529.herokuapp.com/api/auth/user', tokenConfig(getState))
+    axios.get('/api/auth/user', tokenConfig(getState))
         .then(res =>{
 
             console.log("OKKKK");
@@ -105,7 +105,7 @@ export const register = ({ name, email, password, confirm }) => dispatch => {
     }
     // Request body 
     const body = JSON.stringify({ name, email, password, confirm })
-    axios.post('https://safe-reaches-90529.herokuapp.com/api/auth/signUp', body, config)
+    axios.post('/api/auth/signUp', body, config)
         .then(res =>{
 
             dispatch({
@@ -141,7 +141,7 @@ export const login = ({email , password}) => dispatch =>{
     }     
      // Request body 
     const body = JSON.stringify({ email, password });
-    axios.post('https://safe-reaches-90529.herokuapp.com/api/auth/signIn',body,config)
+    axios.post('/api/auth/signIn',body,config)
     .then(res =>{
 
         dispatch({
