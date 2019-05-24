@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 
 
 
-const socketUrl = "http://localhost:5000"
+const socketUrl = "https://safe-reaches-90529.herokuapp.com"
 class chat extends Component {
     constructor(props) {
         super(props);

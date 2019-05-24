@@ -8,7 +8,7 @@ export const handleGettUsers = () => {
 
     return (dispatch) => {
         dispatch(setItemsLoading());
-        axios.get('http://localhost:5000/api/auth')
+        axios.get('https://safe-reaches-90529.herokuapp.com/api/auth')
             .then(res => {
                 console.log(res)
                 dispatch(getUsers(res.data))
@@ -49,7 +49,7 @@ export const loadUser = () => (dispatch, getState) => {
     dispatch({ type: authCotants.userLoadding });
 
 
-    axios.get('http://localhost:5000/api/auth/user', tokenConfig(getState))
+    axios.get('https://safe-reaches-90529.herokuapp.com/api/auth/user', tokenConfig(getState))
         .then(res =>{
 
             console.log("OKKKK");
@@ -105,7 +105,7 @@ export const register = ({ name, email, password, confirm }) => dispatch => {
     }
     // Request body 
     const body = JSON.stringify({ name, email, password, confirm })
-    axios.post('http://localhost:5000/api/auth/signUp', body, config)
+    axios.post('https://safe-reaches-90529.herokuapp.com/api/auth/signUp', body, config)
         .then(res =>{
 
             dispatch({
@@ -141,7 +141,7 @@ export const login = ({email , password}) => dispatch =>{
     }     
      // Request body 
     const body = JSON.stringify({ email, password });
-    axios.post('http://localhost:5000/api/auth/signIn',body,config)
+    axios.post('https://safe-reaches-90529.herokuapp.com/api/auth/signIn',body,config)
     .then(res =>{
 
         dispatch({
