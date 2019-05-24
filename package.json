@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "server": "nodemon server.js"    
+    "start": "node server.js",    
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "server": "nodemon server.js"
   },
   "author": "Phan Dinh Huy",
   "license": "MIT",
@@ -21,7 +22,7 @@
     "socket.io": "^2.2.0",
     "uuidv4": "^4.0.0"
   },
-  "engines": {    
+  "engines": {
     "node": "10.15.1"
   }
 }
