@@ -1,0 +1,70 @@
+#login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fill-available;
+}
+
+#login #loginbox .panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+#login #loginbox .panel-info {
+  border-color: #bce8f1;
+}
+
+#login #loginbox .panel-info .panel-body {
+  padding: 15px;
+  padding-top: 30px;
+}
+
+#login #loginbox .panel-info .panel-body .form-horizontal .input-group .input-group-addon {
+  border-right: 0 !important;
+  padding: 6px 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#login #loginbox .panel-info #loginform .controls, #login #loginbox .panel-info #loginform .control {
+  padding-left: 0px;
+}
+
+#login #loginbox .panel-info #loginform .controls > #btn-login {
+  margin-right: 5px;
+}
+
+#login #loginbox .panel-info .panel-heading {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+#login #loginbox .panel-info .panel-heading .panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+}
+/*# sourceMappingURL=signIn.css.map */

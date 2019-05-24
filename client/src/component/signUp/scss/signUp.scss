@@ -1,0 +1,131 @@
+
+
+body {
+
+    background-image : url(https://colorlib.com/etc/regform/colorlib-regform-8/images/signup-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    .container {    
+
+        .signup-content {
+            background: #fff;
+            border-radius: 10px;   
+            padding: 50px 85px;
+            font-size: 14px;
+            line-height: 1.8;        
+            font-weight: 400;
+            font-family: 'Montserrat';
+            width: 660px;
+            margin : auto;
+            #signup-form{
+
+
+                .errorRegister {
+                    height: 50px;
+                    background-color: #ffa5a5;
+                    color: #ec0000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 4px;
+                }
+
+                .form-title{
+    
+                    line-height: 1.66;
+                    margin: 0;
+                    padding: 0;
+                    font-weight: 900;
+                    color: #222;
+                    font-family: 'Montserrat';
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin-bottom: 40px;
+    
+                }
+                .form-group{
+    
+                    .form-input{
+    
+                        width: 100%;
+                        border: 1px solid #ebebeb;
+                        border-radius: 5px;                  
+                        padding: 17px 20px;
+                        box-sizing: border-box;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #222;
+                    }
+                    input[type=checkbox]:not(old) {
+                        width: 2em;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 1em;                 
+                       
+                        
+                    }
+                    input[type=checkbox]:not(old) + label {
+                        display: inline-block;
+                        margin-top: 7px;
+                        margin-bottom: 25px;
+                    }
+                    .label-agree-term {
+                        font-size: 12px;
+                        font-weight: 600;
+                        color: #555;
+    
+                        .term-service {
+                            color: #555;
+                        }
+                    }
+                    .form-submit {
+                        cursor: pointer;
+                        width: 100%;
+                        border-radius: 5px;                  
+                        padding: 17px 20px;
+                        box-sizing: border-box;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: #fff;
+                        text-transform: uppercase;
+                        border: none;
+                        background-image: -moz-linear-gradient(to left, #74ebd5, #9face6);
+                        background-image: -ms-linear-gradient(to left, #74ebd5, #9face6);
+                        background-image: -o-linear-gradient(to left, #74ebd5, #9face6);
+                        background-image: -webkit-linear-gradient(to left, #74ebd5, #9face6);
+                        background-image: linear-gradient(to left, #74ebd5, #9face6);
+                    }        
+                    
+    
+                }
+    
+            }
+    
+            .loginhere {
+                color: #555;
+                font-weight: 500;
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 5px;         
+                font-size: 15px;
+                color: #777;
+    
+                .loginhere-link {
+                    font-weight: 700;
+                    color: #222;
+                }
+            }
+            
+        }
+    }
+    
+    
+
+
+
+
+}
+
+
