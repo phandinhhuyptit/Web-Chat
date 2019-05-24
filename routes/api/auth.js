@@ -74,8 +74,7 @@ router.post('/signIn', (req, res) => {
         })
 })
 router.get('/', (req, res) => {
-
-
+    
     User.find()
         .select('name email date password')
         .sort({ date: -1 })
