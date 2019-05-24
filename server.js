@@ -11,6 +11,9 @@ const items = require('./routes/api/items');
 const auth = require('./routes/api/auth');
 const path = require('path');
 
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 
 
 let connectedUsers = {}; 
@@ -70,9 +73,10 @@ mongoose.connect(db,{ useNewUrlParser: true })
     console.log(err);
 
 })
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname+'../Client/build/index.html'));
-// });
+app.get('*', (req, res) => {
+  console.log(path.join(__dirname+'/client/build/index.html'));
+  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
 
 
 server.listen(port, () => console.log('Server running in port ' + port));
