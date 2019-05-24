@@ -1,1 +1,0 @@
-export const setItemsLoading = "SET_ITEMS_LOADING";

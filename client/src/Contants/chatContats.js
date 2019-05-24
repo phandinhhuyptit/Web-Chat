@@ -1,6 +1,0 @@
-export const USER_CONNECTED = "USER_CONNECTED";
-export const USER_DISCONNECTED = "USER_DISCONNECTED";
-export const MESSAGE_RECIEVED = "MESSAGE_RECIEVED";
-export const MESSAGE_SENT = "MESSAGE_SENT";
-export const TYPING = "TYPING";
-export const LOGOUT = "LOGOUT"; 
