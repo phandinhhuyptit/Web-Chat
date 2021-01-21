@@ -19,7 +19,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.5",
     "nodemon": "^1.19.0",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.4.0",
     "uuidv4": "^4.0.0"
   },
   "engines": {
